@@ -212,15 +212,7 @@ def connect():
     loggedin = getLoginDetails()
     if loggedin == False:
         return redirect(url_for('login'))
-   # name = request.form.get("name")
-   # email = request.form.get("email")
-   # message = "you have been subscribe to the newsletter"
-   # server = smtplib.SMTP("smtp.gmail.com",578)
-   # server.starttls()
-   # server.login("heartdiseaseprediction2021@gmail.com", "heartdiseaseprediction")
-   # server.sendmail("heartdiseaseprediction2021@gmail.com",email,message)
-   # if not name or not email:
-    #    error_statement = "all the fields are required.."
+  
   
     cursor = mysql.connection.cursor()
     cursor.execute('SELECT * FROM doctorregister')
