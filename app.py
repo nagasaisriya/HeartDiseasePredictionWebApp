@@ -22,9 +22,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 app = Flask(__name__)
 app.secret_key = 'a'
 app.config['MYSQL_HOST'] = 'remotemysql.com'
-app.config['MYSQL_USER'] = '...'
-app.config['MYSQL_PASSWORD'] = '...'
-app.config['MYSQL_DB'] = '...'
+app.config['MYSQL_USER'] = 'nO1eCCeg2t'
+app.config['MYSQL_PASSWORD'] = 'CKnGKHphOl'
+app.config['MYSQL_DB'] = 'nO1eCCeg2t'
 mysql = MySQL(app)
 
 sc = pickle.load(open('sc.pkl', 'rb'))
